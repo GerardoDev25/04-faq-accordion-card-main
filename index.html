@@ -14,10 +14,23 @@
          sizes="32x32"
          href="./images/favicon-32x32.png"
       />
+
+      <!-- ? normalize css -->
       <link
          rel="stylesheet"
          href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
       />
+
+      <!-- ? font awesome -->
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      />
+
+      <!-- ? styles -->
       <link rel="stylesheet" href="style.css" />
       <title>Frontend Mentor | FAQ Accordion Card</title>
    </head>
@@ -37,9 +50,12 @@
             <div class="box box-text">
                <div>
                   <h1>FAQ</h1>
-                  <strong>
-                     How many team members can I invite?
-                  </strong>
+                  <div class="question">
+                     <div>
+                        How many team members can I invite?
+                     </div>
+                     <i class="fas fa-chevron-up"></i>
+                  </div>
                   <p>
                      You can invite up to 2 additional users on
                      the Free plan. There is no limit on team
@@ -47,16 +63,22 @@
                   </p>
                </div>
                <div>
-                  <strong>
-                     What is the maximum file upload size?
-                  </strong>
+                  <div class="question">
+                     <div>
+                        What is the maximum file upload size?
+                     </div>
+                     <i class="fas fa-chevron-up"></i>
+                  </div>
                   <p>
                      No more than 2GB. All files in your account
                      must fit your allotted storage space.
                   </p>
                </div>
                <div>
-                  <strong> How do I reset my password? </strong>
+                  <div class="question">
+                     <div>How do I reset m y password?</div>
+                     <i class="fas fa-chevron-up"></i>
+                  </div>
                   <p>
                      Click “Forgot password” from the login page
                      or “Change password” from your profile page.
@@ -65,18 +87,22 @@
                </div>
 
                <div>
-                  <strong>
-                     Can I cancel my subscription?
-                  </strong>
+                  <div class="question">
+                     <div>Can I cancel my subscription?</div>
+                     <i class="fas fa-chevron-up"></i>
+                  </div>
                   <p>
                      Yes! Send us a message and we’ll process
                      your request no questions asked.
                   </p>
                </div>
                <div>
-                  <strong>
-                     Do you provide additional support?
-                  </strong>
+                  <div class="question">
+                     <div>
+                        Do you provide additional support?
+                     </div>
+                     <i class="fas fa-chevron-up"></i>
+                  </div>
                   <p>
                      Chat and email support is available 24/7.
                      Phone lines are open during normal business

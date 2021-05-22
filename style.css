@@ -1,9 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
 html,
 body {
    height: 100vh;
    width: 100vw;
    /* overflow-y: hidden; */
    font-size: 12px;
+   background-image: linear-gradient(
+      hsl(273, 75%, 66%),
+      hsl(240, 73%, 65%)
+   );
+   font-family: "Kumbh Sans", sans-serif;
 }
 
 main {
@@ -17,9 +24,11 @@ main {
 .container {
    height: 500px;
    width: 900px;
-   border: 1px solid black;
+   border-radius: 2rem;
+   background-color: white;
    display: flex;
    font-size: 1.2rem;
+   box-shadow: 0.1rem 0.6rem 2rem rgba(0, 0, 0, 0.4);
 }
 
 .box {
@@ -62,6 +71,55 @@ main {
    background-image: url("./images/illustration-woman-online-desktop.svg");
    background-size: contain;
    /* overflow: hidden; */
+}
+
+.img2 {
+   position: absolute;
+   top: 39%;
+   width: 30%;
+   height: 30%;
+   left: -18%;
+   z-index: 1000;
+   background-image: url("./images/illustration-box-desktop.svg");
+   background-size: cover;
+}
+
+.box-text {
+   box-sizing: border-box;
+   padding-top: 2rem;
+   padding-right: 3rem;
+   /* border: 1px double black; */
+   overflow-y: auto;
+}
+
+.box-text > div {
+   padding: 2rem 0 ;
+   border-bottom: 4px solid hsl(240, 5%, 91%);
+}
+.box-text p {
+   /* display: none; */
+   font-weight: 400;
+   color: hsl(238, 29%, 16%);
+}
+.box-text h1 {
+   margin: 3rem 0;
+   font-weight: 700;
+}
+
+.question {
+   display: flex;
+   justify-content: space-between;
+   transition: color .2s ease-out;
+   cursor: pointer;
+}
+
+.question:hover{
+   color: hsl(14, 88%, 65%);
+}
+
+.question div {
+   font-weight: 700;
+   font-size: 1.2rem;
 }
 
 /* *footer */
