@@ -10,6 +10,7 @@ body {
       hsl(240, 73%, 65%)
    );
    font-family: "Kumbh Sans", sans-serif;
+   overflow: hidden;
 }
 /* 894px */
 main {
@@ -186,6 +187,7 @@ padding-right: 4px;
    body {
       height: 1000px;
       max-height: 1200px;
+      overflow-y: auto;
       overflow-x: hidden;
    }
    main {
