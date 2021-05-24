@@ -4,6 +4,7 @@ const selecQuery = (e) => {
    const paragraph =
       e.target.parentElement.nextSibling.nextElementSibling;
 
+   if (!paragraph) return;
    const icon =
       e.target.parentElement.lastChild.previousElementSibling;
 
